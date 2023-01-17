@@ -1,0 +1,22 @@
+{
+  "name": "wagmi-core-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.12.6",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@wagmi/core": "^0.8.14",
+    "dotenv": "^16.0.3"
+  }
+}

@@ -8,41 +8,13 @@
   padding: 40px; 
   }  
 
-#pisi {
+#countHolder {
   text-align: center;
 }
-
-#connectBtn{  
-  font-family: 'Arial';
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Arial
-  ';
-font-style: normal;
-font-weight: 700;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-width: 230px; 
-height: 45px;
-border-radius: 8px;
-background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
-font-size: 14px;
-
-  }  
 
 #address {
   margin: 10px;
 }
-
-#connectBtn:hover {
-  background-color: #5a5a5a;
-  color: rgb(255, 255, 255);
-  border: 0px;
-  border-radius: 8px;
-  }
-
 
 #enabled{
   font-family: 'Arial';
@@ -58,7 +30,7 @@ font-size: 14px;
   color: white;
 }
 
-#enabled:hover{
+#enabled:hover, #disabled:hover{
   background-color: #5a5a5a;
   color: rgb(255, 255, 255);
   border: 0px;
@@ -79,55 +51,37 @@ font-size: 14px;
   color: white;
   }  
 
-  #disabled:hover{
-    background-color: #5a5a5a;
-    color: rgb(255, 255, 255);
-    border: 0px;
-    border-radius: 8px;
-  }
-
-  #divcina {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
-  }
-
-  #disconnectBtn{
+  #connectBtn, #disconnectBtn{  
     font-family: 'Arial';
     margin-left: auto;
     margin-right: auto;
     font-family: 'Arial
-    ';
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 230px; 
-  height: 45px;
-  border-radius: 8px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-
+      ';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px; 
+    height: 45px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    } 
     
-  }
-
-
-  #disconnectBtn:hover{
+  #connectBtn:hover,#disconnectBtn:hover {
     background-color: #5a5a5a;
     color: rgb(255, 255, 255);
     border: 0px;
     border-radius: 8px;
-  }
-
-#forma {
+    }
+  
+#inputArea {
   text-align: left;
   }
 
-
-#ime1 { 
+#namefield, #colorfield, #yearfield { 
   padding: 10px;
   border-style:solid;
   border-radius: 4px;
@@ -137,36 +91,6 @@ font-size: 14px;
   box-sizing: border-box;
   }
 
-  #ime2 { 
-    padding: 10px;
-    border-style:solid;
-    border-radius: 4px;
-    border-color: rgb(182, 182, 182);
-    width: 100%;
-    margin-bottom:1px;
-    box-sizing: border-box;
-    }
-
-    #ime3 { 
-      padding: 10px;
-      border-style:solid;
-      border-radius: 4px;
-      border-color: rgb(182, 182, 182);
-      width: 100%;
-      margin-bottom:1px;
-      box-sizing: border-box;
-      }
-
-      #ime { 
-        padding: 10px;
-        border-style:solid;
-        border-radius: 4px;
-        border-color: rgb(182, 182, 182);
-        width: 100%;
-        margin-bottom:1px;
-        box-sizing: border-box;
-        }
-  
 #myCheck {
   height:40px;
   width: 40px;
@@ -174,81 +98,18 @@ font-size: 14px;
   margin-left:0px;
   }
 
-#has {
-  margin-top: 10px;
-  }
-  
-#log {
-  font-family: 'Arial
-    ';
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 230px; 
-  height: 45px;
-  border-radius: 8px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  }
-
-  #dugme {
-margin-top: 15px;
-  }
-
-#log:hover {
-  background-color: #5a5a5a;
-  color: rgb(255, 255, 255);
-  border: 0px;
-  border-radius: 8px;
-  }
-
-
-#dole {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  }
-
-  
-
-#p {
+#placerAddress {
   margin-bottom: 10px;          
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   }
-  
-#pnot {
-  margin-bottom: 5px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  
 
-#err {
-  color:red;
-  padding: 10px;
-  text-align: center;
-  }
-
-#succ {
-  font-family: Inter;
-  color: #1C872D ;
-  padding: 10px;
-  text-align: center;
-  }
-  
-#creatin {
-  
+#textWhileCreating {
   margin-top: 10px;
   text-align: center;
   }
 
-  #checkdiv {
+  #checkDiv {
     padding-top: 15px;
   }

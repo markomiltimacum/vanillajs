@@ -7,8 +7,7 @@ import {
 	setupConnect,
 	watchAccountSetup,
 	setupDisconnect,
-	create,
-	ness
+	create
 } from './functions';
 
 const { ethers } = import("ethers");
@@ -17,46 +16,40 @@ const { ethers } = import("ethers");
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /* html */ `
   <div>
-	
 		<button id='connectBtn'>Connect</button>
 		<button id='disconnectBtn'>Disconnect</button>
 
-	<div id="p">
-		<div id='address'></div>
-</div>
+		<div id="placerAddress">
+			<div id='address'></div>
+		</div>
 
 <div id="container">
-    
-<form id="forma" onsubmit="return false">
-	 <div id="polje">
-		   <label for="imes">Name</label>
-		   <input id="ime1" type="text" value="" onchange="(this.value)"/><br></br>
-		  
-		   <label for="color">Color</label>
-		   <input id="ime2" type="text" value="" onchange="(this.value)"/><br></br>
-		  
-		   <label for="number">Year</label>
-		   <input id="ime3" type="number" value="" onchange="(this.value)"/><br></br>
-	 </div>   
+		<form id="inputArea" onsubmit="return false">
+			<div>
+				<label>Name</label>
+				<input id="namefield" type="text" value="" onchange="(this.value)"/><br></br>
+				
+				<label>Color</label>
+				<input id="colorfield" type="text" value="" onchange="(this.value)"/><br></br>
+				
+				<label>Year</label>
+				<input id="yearfield" type="number" value="" onchange="(this.value)"/><br></br>
+			</div>   
 
-			<div id="checkdiv">
+			<div id="checkDiv">
 						Registered: <br> <input type="checkbox"  id="myCheck" />
-						
 						<button id='enabled' >Create car</button> 
 						<button id='disabled'>Create car</button> 
 			</div>
 
-				<div id="creatin">
-				
-				</div>
+			<div id="textWhileCreating"></div>
+		</form>
+		
+</div>
 
+<p id="countHolder">Total number of cars: loading </p>
 
-	</form>
-			
-	</div>
-	<p id="pisi">Total number of cars: loading </p>
 </div> 
-  
 `;
 
 // JS part
@@ -73,5 +66,4 @@ watchAccountSetup(
 setupConnect(document.querySelector<HTMLButtonElement>('#connectBtn')!);
 setupDisconnect(document.querySelector<HTMLButtonElement>('#disconnectBtn')!);
 create(document.querySelector<HTMLButtonElement>('#enabled')!);
-
 

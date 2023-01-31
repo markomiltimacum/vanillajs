@@ -80,7 +80,7 @@ export async function initialCreate () {
 					
 					if(txHash){
 
-					var formReset = document.getElementById("inputArea");
+					let formReset = document.getElementById("inputArea");
 					formReset.reset();
 
 					document.getElementById("enabled").style.backgroundColor= '#000000';

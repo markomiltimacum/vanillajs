@@ -32,8 +32,6 @@ export function configureMainWagmi() {
 		webSocketProvider,
 	});
 }
-let abic= abiConst;
-console.log(abic);
 
  window.onload= async function carCount () {
 const data = await readContract({
